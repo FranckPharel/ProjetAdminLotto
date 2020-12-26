@@ -27,16 +27,16 @@ class CreateEmployeesTable extends Migration
             $table->string('Skype');
             $table->string('SecurityCode');
             $table->string('Email')->unique();
-            $table->DateTime('BornOn');
+            $table->dateTime('BornOn');
             $table->integer('BaseSalary');
-            $table->bool('IsMale');
-            $table->bool('IsBlocked');
-            $table->bool('IsDeleted');
+            $table->boolean('IsMale');
+            $table->boolean('IsBlocked');
+            $table->boolean('IsDeleted');
             $table->dateTime('RegisteredOn')->Nullable();
             $table->dateTime('CreatedOn');
             $table->dateTime('UpdateOn');
             $table->integer('Cashier_id')->unsigned(); ;
-            $table->bool('IsManager');
+            $table->boolean('IsManager');
             $table->string('Activities');
 
         });

@@ -16,13 +16,12 @@ class CreatePartnerInvoiceSettingsTable extends Migration
         Schema::create('partner_invoice_settings', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('Title');
             $table->integer('Partner_id')->unsigned();
             $table->decimal('Percentage');
-            $table->integer('CreatedBy'); 
-            $table->dateTime('CreatedOn'); 
-            $table->dateTime('UpdatedOn')->Nullable(); 
-   
+            $table->bigInteger('CreatedBy');
+            $table->dateTime('CreatedOn');
+            $table->dateTime('UpdatedOn')->Nullable();
+
         });
     }
 

@@ -15,15 +15,15 @@ class CreateUserCashOperationsTable extends Migration
     {
         Schema::create('user_cash_operations', function (Blueprint $table) {
             $table->timestamps();
-            $table->bigIncrements('Id');  
-            $table->integer('User_id')->unsigned();  
-            $table->integer('Amount');  
-            $table->integer('CashOperationType_id')->unsigned();   
-            $table->string('Title');  
-            $table->string('Description'); 
-            $table->dateTime('OperationDate');  
-            $table->dateTime('CreatedOn');  
-            $table->bool('IsDeleted');  
+            $table->bigIncrements('id');
+            $table->bigInteger('User_id')->unsigned();
+            $table->integer('Amount');
+            $table->integer('CashOperationType_id')->unsigned();
+            $table->string('Title');
+            $table->string('Description');
+            $table->dateTime('OperationDate');
+            $table->dateTime('CreatedOn');
+            $table->boolean('IsDeleted');
         });
     }
 

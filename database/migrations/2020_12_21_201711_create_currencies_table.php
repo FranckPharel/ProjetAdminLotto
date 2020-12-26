@@ -16,10 +16,10 @@ class CreateCurrenciesTable extends Migration
         Schema::create('currencies', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->string('Code');  
-            $table->string('DisplaySymbol');  
-            $table->string('Description');  
-            $table->bool('IsDisplaySymbolAfter')->Nullable();
+            $table->string('Code');
+            $table->string('DisplaySymbol');
+            $table->string('Description');
+            $table->boolean('IsDisplaySymbolAfter')->Nullable();
         });
     }
 

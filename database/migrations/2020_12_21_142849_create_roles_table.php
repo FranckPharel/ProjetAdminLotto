@@ -15,15 +15,15 @@ class CreateRolesTable extends Migration
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->timestamps();
-            $table->integer('id');  
-            $table->string('Title');  
-            $table->string('Description');  
-            $table->integer('UserCountInRole')->Nullable;  
-            $table->integer('CreatedBy');  
-            $table->bool('IsActive')->Nullable;  
-            $table->bool('IsDeleted')->Nullable;  
-            $table->bool('IsBlocked')->Nullable;  
-   
+            $table->increments('id');
+            $table->string('Title');
+            $table->string('Description');
+            $table->integer('UserCountInRole')->Nullable;
+            $table->integer('CreatedBy');
+            $table->boolean('IsActive')->Nullable;
+            $table->boolean('IsDeleted')->Nullable;
+            $table->boolean('IsBlocked')->Nullable;
+
         });
     }
 

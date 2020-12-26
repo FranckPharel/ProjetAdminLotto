@@ -33,11 +33,11 @@ class CreateDesactivatedAccountsTable extends Migration
             $table->dateTime('ApprovedOn')->Nullable();
             $table->dateTime('LastActivityDate');
             $table->integer('LogOnCount')->Nullable();
-            $table->bool('IsOnline');
-            $table->bool('IsApproved');
-            $table->bool('IsBlocked');
-            $table->bool('IsDeleted');
-            $table->bool('IsMan')->Nullable();
+            $table->boolean('IsOnline');
+            $table->boolean('IsApproved');
+            $table->boolean('IsBlocked');
+            $table->boolean('IsDeleted');
+            $table->boolean('IsMan')->Nullable();
         });
     }
 

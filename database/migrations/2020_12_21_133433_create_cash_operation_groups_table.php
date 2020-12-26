@@ -17,9 +17,9 @@ class CreateCashOperationGroupsTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->string('Title');
-            $table->dateTime('CreatedOn');  
-            $table-> DateTime('UpdatedOn')->Nullable();  
-    
+            $table->dateTime('CreatedOn');
+            $table->dateTime('UpdatedOn')->Nullable();
+
         });
     }
 

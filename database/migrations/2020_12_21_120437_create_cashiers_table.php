@@ -17,17 +17,18 @@ class CreateCashiersTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->integer('CashierRole_id')->unsigned();
+            $table->integer('Manager_id')->unsigned();
             $table->string('FirstName');
             $table->string('Name');
             $table->string('Login');
             $table->string('Message');
             $table->string('Password');
             $table->dateTime('CreatedOn');
-            $table->Bool('IsBlocked');
-            $table->Bool('IsDeleted');
+            $table->boolean('IsBlocked');
+            $table->boolean('IsDeleted');
             $table->dateTime('LastLogDate');
-            $table->Bool('IsOnline');
-            $table->integer('CreatedBy');
+            $table->boolean('IsOnline');
+            $table->bigInteger('CreatedBy');
             $table->dateTime('UpdateOn');
             $table->dateTime('LastLogOffDate');
 

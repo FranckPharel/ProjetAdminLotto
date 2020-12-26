@@ -19,9 +19,9 @@ class CreateDepartmentsTable extends Migration
             $table->integer('Partner_id');
             $table->string('Title');
             $table->string('Description');
-            $table->integer('CreatedBy');
-            $table->bool('IsActive')->Nullable();
-            $table->bool('IsDeleted')->Nullable();
+            $table->bigInteger('CreatedBy');
+            $table->boolean('IsActive')->Nullable();
+            $table->boolean('IsDeleted')->Nullable();
         });
     }
 

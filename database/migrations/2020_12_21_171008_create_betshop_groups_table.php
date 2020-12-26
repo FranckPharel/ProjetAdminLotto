@@ -15,15 +15,15 @@ class CreateBetshopGroupsTable extends Migration
     {
         Schema::create('betshop_groups', function (Blueprint $table) {
             $table->timestamps();
-            $table->bigIncrements('id');  
-            $table->integer('Partner_id')->unsigned(); 
-            $table->integer('Betshop_id')->unsigned(); 
+            $table->bigIncrements('id');
+            $table->integer('Partner_id')->unsigned();
+            $table->integer('Betshop_id')->unsigned();
             $table->integer('Station_id')->unsigned();
-            $table->dateTime('CreatedOn'); 
-            $table->integer('CreatedBy'); 
-            $table->dateTime('UpdatedOn'); 
-            $table->bool('IsDeleted'); 
-    
+            $table->dateTime('CreatedOn');
+            $table->bigInteger('CreatedBy');
+            $table->dateTime('UpdatedOn');
+            $table->boolean('IsDeleted');
+
         });
     }
 
