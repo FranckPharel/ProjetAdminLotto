@@ -14,9 +14,8 @@ class CreateExpensesTable extends Migration
     public function up()
     {
         Schema::create('expenses', function (Blueprint $table) {
-            $table->id();
             $table->timestamps();
-            $table->increments('Id');
+            $table->increments('id');
             $table->string('Category');
             $table->string('Description');
             $table->float('Amount');

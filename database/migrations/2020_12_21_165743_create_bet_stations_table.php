@@ -19,7 +19,7 @@ class CreateBetStationsTable extends Migration
             $table->integer('Partner_id')->unsigned();
             $table->integer('Currency_id')->unsigned();
             $table->string('Title');
-            $table->byte('LogoImage');
+            $table->binary('LogoImage');
             $table->string('LogoContentType');
             $table->string('LogoFileName');
             $table->boolean('IsBlocked');

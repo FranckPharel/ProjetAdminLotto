@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('menuroles');
             $table->integer('PartnerId');
-            $table->byte('AvatarImage');
+            $table->binary('AvatarImage');
             $table->string('AvatarContentType');
             $table->string('AvatarFileName');
             $table->string('FirstName');
@@ -43,9 +43,9 @@ class CreateUsersTable extends Migration
             $table->boolean('IsMan')->Nullable();
             $table->integer('DefaultStationId')->Nullable();
             $table->boolean('IsFirstConnection');
-            $table->rememberToken();
+           /* $table->rememberToken();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes();*/
         });
     }
 

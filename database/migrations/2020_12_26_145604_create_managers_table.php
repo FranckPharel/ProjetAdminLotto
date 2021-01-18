@@ -14,8 +14,23 @@ class CreateManagersTable extends Migration
     public function up()
     {
         Schema::create('managers', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->timestamps();
+            $table->integer('users_id')->unsigned();
+            $table->string('FirstName');
+            $table->string('Name');
+            $table->string('Login');
+            $table->string('Message');
+            $table->string('Password');
+            $table->dateTime('CreatedOn');
+            $table->boolean('IsBlocked');
+            $table->boolean('IsDeleted');
+            $table->dateTime('LastLogDate');
+            $table->boolean('IsOnline');
+            $table->bigInteger('CreatedBy');
+            $table->dateTime('UpdateOn');
+            $table->dateTime('LastLogOffDate');
+
         });
     }
 

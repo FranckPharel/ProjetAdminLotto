@@ -14,9 +14,8 @@ class CreateCashoutsTable extends Migration
     public function up()
     {
         Schema::create('cashouts', function (Blueprint $table) {
-            $table->id();
             $table->timestamps();
-            $table->increments('Id');
+            $table->increments('id');
             $table->string('Source');
             $table->string('Description');
             $table->float('Amount');

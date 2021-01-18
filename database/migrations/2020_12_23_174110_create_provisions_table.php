@@ -14,9 +14,8 @@ class CreateProvisionsTable extends Migration
     public function up()
     {
         Schema::create('provisions', function (Blueprint $table) {
-            $table->id();
             $table->timestamps();
-            $table->increments('Id');
+            $table->increments('id');
             $table->string('Source');
             $table->string('Description');
             $table->float('Amount');

@@ -15,7 +15,7 @@ class CreateDesactivatedAccountsTable extends Migration
     {
         Schema::create('desactivated_accounts', function (Blueprint $table) {
             $table->bigInteger('UserId');
-            $table->byte('AvatarImage');
+            $table->binary('AvatarImage');
             $table->string('AvatarContentType');
             $table->string('AvatarFileName');
             $table->string('UserName');
