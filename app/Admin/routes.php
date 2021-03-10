@@ -43,6 +43,9 @@ Route::group([
         'subway/stops'          => Subway\StopController::class,
 
         'documents'             => DocumentController::class,
+        'partners'              => PartnerController::class,
+        'bet-stations'          => BetStationController::class,
+        'betshops'              => BetShopController::class,
     ]);
 
     $router->group(['prefix' => 'editors'], function ($router) {
