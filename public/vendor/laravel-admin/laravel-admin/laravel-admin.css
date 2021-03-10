@@ -27,11 +27,19 @@ input.label {
 }
 
 a.editable-empty {
+<<<<<<< HEAD
     color: #3c8dbc;
     border-bottom: none !important;
 }
 
 .form-group > label.asterisk:before {
+=======
+    color: #ffc104;
+    border-bottom: none !important;
+}
+
+.form-group>label.asterisk:before {
+>>>>>>> 12794d41c9ffe8cc786ee50bd5556268e6ed8f6b
     content: " *";
     color: red;
 }
@@ -44,7 +52,10 @@ a.editable-empty {
     margin-bottom: 0 !important;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 12794d41c9ffe8cc786ee50bd5556268e6ed8f6b
 .table-has-many label.control-label[for=inputError] {
     position: absolute;
     z-index: 100;
@@ -78,4 +89,8 @@ a.editable-empty {
 
 #totop:hover {
     opacity: 1;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 12794d41c9ffe8cc786ee50bd5556268e6ed8f6b

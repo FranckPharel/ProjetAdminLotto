@@ -48,7 +48,7 @@ return [
     'succeeded'             => 'Réussi',
     'failed'                => 'Failli',
     'delete_confirm'        => 'Êtes vous bien certain de vouloir supprimer cet élement ?',
-    'delete_succeeded'      => "Élement supprimé avec succès!",
+    'delete_succeeded'      => 'Élement supprimé avec succès!',
     'delete_failed'         => 'L\'effacement a échoué !',
     'update_succeeded'      => 'Changements sont bien mis à jour !',
     'save_succeeded'        => 'Changements sauvés !',
