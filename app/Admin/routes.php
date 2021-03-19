@@ -46,6 +46,7 @@ Route::group([
         'partners'              => PartnerController::class,
         'bet-stations'          => BetStationController::class,
         'betshops'              => BetShopController::class,
+        'employees'            => EmployeeController::class,
     ]);
 
     $router->group(['prefix' => 'editors'], function ($router) {
