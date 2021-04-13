@@ -5,7 +5,7 @@ namespace App\Admin\Actions\Post;
 use Encore\Admin\Actions\Action;
 use Illuminate\Http\Request;
 
-class ImportPost extends Action
+class ImportPosts extends Action
 {
     protected $selector = '.import-posts';
 
